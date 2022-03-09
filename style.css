@@ -125,4 +125,9 @@ body{
     top: 92px;
 }
 
-
+.hover:hover{
+    font-size: 38px;
+    color: rgb(187, 255, 232);
+    text-shadow: 
+    0 0 10px black;
+}
