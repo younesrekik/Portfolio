@@ -10,11 +10,18 @@
 </head>
 <body>
     <nav class="nav">
-        <a href="index.html" class="home nav_text"><div class="hover"> home </div></a>
-        <a href="about.html" class="about nav_text"><div class="hover"> about </div></a>
-        <div class="contact nav_text"> contact </div>
-        <a href="#"><div class="logos_link"></div></a>
+        <div class="nav-content">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div class="logos_link"><a href="#"></a></div>
+        </div>
     </nav>
+
+    <br><br>
 
     <aside id="/contact" class="form float_left">
         <legend><h3 id="form_legend"> Send me a message here: </h3></legend>
@@ -25,19 +32,19 @@
                     <td>                
                         <aside class="float_left">
                             <label for="f_name">
-                                <legend> First name </legend>
+                                <legend> First name: </legend>
                             </label>
                             <input type="text" name="f_name" class="input_size input_style">
 
                             <label for="l_name">
-                                <legend> Last name </legend>
+                                <legend> Last name: </legend>
                             </label>
                             <input type="text" name="l_name" class="input_size input_style">
                         </aside>
 
                         <aside class="float_left margin_left_10px">
                             <label for="type">
-                                <legend> type here: </legend>
+                                <legend> message: </legend>
                             </label>
                             <textarea name="type" rows="4" cols="27" class="none_resize input_style"></textarea>
                         </aside>
@@ -45,10 +52,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <label for="username">
-                            <legend> Username </legend>
+                        <label for="email">
+                            <legend> email: </legend>
                         </label>                    
-                        <input type="email" name="username" class="input_username_size input_style">
+                        <input type="email" name="email" class="input_email_size input_style">
                         <input type="submit" value="submit" class="button_size">
                         <input type="reset" value="cancel" class="button_size">
                     </td>

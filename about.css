@@ -8,59 +8,56 @@ body{
 /*#77a2ca   nav   */
 
 .nav{
-    position: relative;
+    position: fixed;
     left: 0;
     right: 0;
-    height: 80px;
+    height: 60px;
     color: #346491;
     background-color: currentColor;
     box-shadow:
     0 0 10px 10px rgba(45, 83, 139, 0.25);
-    
     z-index: 6;
 }
 
-.nav_text{
-    color: #cde5e1;
-    font-size: 40px;
+.nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .menu li{
+    list-style: none;
+    display: inline-block;
+    
+}
+
+.nav .menu li a{
+    display: block;
     text-decoration: none;
+    color: #eef8f8;
+    font-size: 18px;
+    font-weight: 500;
     top: 10px;
     text-shadow:
     4px 4px 4px rgba( 0, 0, 0, 0.25);
-    position: relative;
-    text-align: center;
-    float: left;
+    margin-left: 35px;
 }
 
-.home{
-    position: absolute;
-    left: 10%;
-}
-
-.about{
+.nav .menu li a:hover{
+    transform: scale(1.03);
     color: rgb(187, 255, 232);
     text-shadow: 
     0 0 10px black;
-    position: absolute;
-    left: 25%;
-}
-
-.contact{
-    position: absolute;
-    left: 40%;
 }
 
 .logos_link{
-    position: relative;
-    width: 60px;
-    height: 60px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
-    float: right;
-    right: 2%;
-    bottom: -10px;
+    margin-right: 12px;
+
     animation: logos 20s linear infinite;
 }
-
 
 @keyframes logos {
     0%{
@@ -77,18 +74,22 @@ body{
     }
 }
 
-.portrait{
-    text-align: center;
-}
+
 
 /* about */
+
+.portrait{
+    float: left;
+    margin: 5% 0 0 10%;
+}
 
 .about_me-text{
     font-size: 30px;
     color: #01382e;
-    text-align: center;
-    margin: 0 100px ;
     position: relative;
+    float: left;
+    width: 50%;
+    margin: 5% 0 0 100px;
 }
 
 .hover:hover{
