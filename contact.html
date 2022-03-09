@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html" class="nav_text"> home </a>
+        <a href="about.html" class="nav_text"> about </a>
+        <div class="contact nav_text"> contact </div>
+        <a href="#"><div class="logos_link"></div></a>
+    </nav>
+
+    <aside id="/contact" class="form float_left">
+        <legend><h3 id="form_legend"> Send me a message here: </h3></legend>
+
+        <form action="f1">
+            <table>
+                <tr>
+                    <td>                
+                        <aside class="float_left">
+                            <label for="f_name">
+                                <legend> First name </legend>
+                            </label>
+                            <input type="text" name="f_name" class="input_size input_style">
+
+                            <label for="l_name">
+                                <legend> Last name </legend>
+                            </label>
+                            <input type="text" name="l_name" class="input_size input_style">
+                        </aside>
+
+                        <aside class="float_left margin_left_10px">
+                            <label for="type">
+                                <legend> type here: </legend>
+                            </label>
+                            <textarea name="type" rows="4" cols="27" class="none_resize input_style"></textarea>
+                        </aside>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="username">
+                            <legend> Username </legend>
+                        </label>                    
+                        <input type="email" name="username" class="input_username_size input_style">
+                        <input type="submit" value="submit" class="button_size">
+                        <input type="reset" value="cancel" class="button_size">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </aside>
+    <table>
+        <tr>
+            <td>
+                <aside class="float_left mail_logo">
+                    <div class="mail_logo2"></div>
+                </aside>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <aside class="float_left phone_logo">
+                    <div class="phone_logo2"></div>
+                </aside>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
