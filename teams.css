@@ -145,9 +145,9 @@ body{
     font-weight: 700;
     text-transform: uppercase;
 }
-.box p{
+/*.box p{
     line-height: 1.9;
-}
+}*/
 .owl-dots{
     text-align:center;
     margin-top: 3%;
