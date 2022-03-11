@@ -1,41 +1,115 @@
 *{
-    text-decoration:none;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    margin:0;
-    padding:0;
+    margin: 0;
+    text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    box-sizing:border-box;
+    
+}
+body{
     background-color: #cde5e1;
 }
+
+/* teams () styling */
+.teams{
+    background:#cde5e1;
+    height:713px;
+}
+.title{
+    text-align:center;
+    font-family:popping,sans-serif;
+    font-size:60px;
+    font-weight:600;
+    color:rgb(30, 90, 100);
+}
+
+#slider{
+    margin-top:15%;
+}
+.card{
+    text-align:center;
+    padding: 40px;
+    color:#fff;
+    border-radius: 25px;
+    background:rgba(76, 161, 116, 0.534);
+    backdrop-filter: blur(12px);
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.owl-carousel .card:hover{
+    cursor:pointer;
+    background:#0045ac86;
+    transition: all 0.3s ease;
+}
+.owl-carousel .card:hover .box{
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
+.box img{
+    height: 120px;
+    width: 120px;
+    object-fit:cover;
+    border-radius: 50%;
+    border: 5px solid #0045ac86;
+    transition: all 0.3s ease;
+}
+.owl-carousel .card:hover img{
+    border-color:#fff;
+}
+.box h2{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.box p{
+    line-height: 1.9;
+}
+.owl-dots{
+    text-align:center;
+    margin-top: 3%;
+}
+.owl-dot{
+    height:13px;
+    width:13px;
+    margin: 0 5px;
+    outline: none!important;
+    background: none !important;
+    border-radius: 50%;
+    border: 2px solid #0045ac86 !important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 30px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: #0045ac86 !important;
+}
+/* teams () End */
+
+/* nav () styling */
 
 .nav{
     position: fixed;
     left: 0;
     right: 0;
     height: 60px;
-    color: #346491;
-    background-color: currentColor;
-    box-shadow:
-    0 0 10px 10px rgba(45, 83, 139, 0.25);
-    z-index: 6;
+    background-color: #346491;
 }
 
 .nav-content{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 .nav .menu li{
     list-style: none;
     display: inline-block;
-    
 }
 
 .nav .menu li a{
@@ -48,6 +122,7 @@ body{
     text-shadow:
     4px 4px 4px rgba( 0, 0, 0, 0.25);
     margin-left: 35px;
+    position: relative;
 }
 
 .nav .menu li a:hover{
@@ -58,12 +133,13 @@ body{
 }
 
 .logos_link{
+    position: relative;
     width: 42px;
     height: 42px;
+    top: 9px;
     border-radius: 50%;
     margin-right: 12px;
-
-    animation: logos 20s linear infinite;
+    animation: logos 20s cubic-bezier(1, 0, 0, 1) infinite;
 }
 
 @keyframes logos {
@@ -80,89 +156,4 @@ body{
         background-size: contain;
     }
 }
-
-/* teams () styling */
-.teams{
-    height:100vh;
-    padding: 100px 0;
-}
-.title{
-    text-align:center;
-    font-family:popping,sans-serif;
-    font-size:60px;
-    font-weight:600;
-    color:rgb(47, 148, 143);
-}
-
-#slider{
-    margin-top:10%;
-}
-
-.card{
-    text-align:center;
-    padding: 40px;
-    color:#fff;
-    border-radius: 25px;
-    background:rgba(56, 160, 111, 0.404);
-    backdrop-filter: blur(12px);
-}
-
-.box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-.owl-carousel .card:hover{
-    cursor:pointer;
-    background:rgba(41, 77, 177, 0.664);
-    transition: all 0.3s ease;
-}
-.owl-carousel .card:hover .box{
-    transform: scale(1.03);
-    transition: all 0.3s ease;
-}
-.box img{
-    height: 120px;
-    width: 120px;
-    object-fit:cover;
-    border-radius: 50%;
-    border: 5px solid rgba(41, 77, 177, 0.664);
-    transition: all 0.3s ease;
-}
-.owl-carousel .card:hover img{
-    border-color:#fff;
-}
-.box h2{
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-/*.box p{
-    line-height: 1.9;
-}*/
-.owl-dots{
-    text-align:center;
-    margin-top: 3%;
-    display: none;
-}
-.owl-dot{
-    height:13px;
-    width:13px;
-    margin: 0 5px;
-    outline: none !important;
-    background: none !important;
-    border-radius: 50%;
-    border: 2px solid rgba(41, 77, 177, 0.664) !important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 30px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: rgba(41, 77, 177, 0.664) !important;
-}
-/* teams () End */
+/* nav () end */
